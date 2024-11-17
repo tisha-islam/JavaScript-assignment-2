@@ -59,8 +59,27 @@ var course = {
 console.log(course.title);
 document.getElementById("course_title").innerHTML=course.title
 
-console.log(course['categories'][o]);
-document.getElementById("main_category").innerHTML=course['categories'][0]
+// b
+console.log(course['categories'][0]);
+document.getElementById("main_category").innerHTML=course['categories'][0];
+
+
+
+function sum_args(num1,num2,num3,num4,num5){
+    var sum = num1+num2+num3+num4+num5;
+    console.log(sum);
+}
+sum_args(420,80,33,20,4);
+
+var average=(420/557)*100;
+console.log(average);
+
+var roundedNumber = Math.round(75.40394973070018);
+console.log(roundedNumber);
+var name ="75";
+name += "%";
+console.log(name);
+document.getElementById("reviews_5_stars").innerHTML=name
 
 var shoppingList = ["Milk", "Butter", "Juice", "Bread", "Beer", "Rice", "Potatoes", "Chocolate"]; 
 shoppingList.pop();
@@ -72,14 +91,3 @@ var shoppingList = ["Milk", "Butter", "Juice", "Bread", "Beer", "Rice", "Potatoe
 shoppingList.push("cheese");
 shoppingList.push("Eggs");
 console.log(shoppingList);
-
-function sum_args(num1,num2,num3,num4,num5){
-    var sum = num1+num2+num3+num4+num5;
-    console.log(sum);
-}
-sum_args(420,80,33,20,4);
-
-var average=(420/557)*100;
-console.log(average);
-
-var roundedNumber = Math.round()
